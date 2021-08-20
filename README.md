@@ -5,8 +5,9 @@ Table of Contents
 =================
  * [domain-recon](#domain-recon) 
  * [nmap-int-scan](#nmap-int-scan) 
- * [nmap-scanalyze](#nmap-scanalyze) 
  * [nmap-int-scanalyze](#nmap-int-scanalyze) 
+ * [nmap-scanalyze](#nmap-scanalyze) 
+ * [subdomain-recon](#subdomain-recon) 
 
 ## domain-recon
 Tool used to perform reconnaissance from a domain name. Outputs are sent to their respective .txt files in your current working directory.
@@ -20,3 +21,6 @@ Nmap commands that take input text file of IP addresses and performs: Nmap Host 
 
 ## nmap-int-scanalyze
 Combines nmap-int-scan.sh with nmap-scanalyze.sh to scan an internal netowrk (host discovery, TCP, UDP) and summarize output.
+
+## subdomain-recon
+Utilizes sublist3r & amass to discover subdomains of a provided domain. Extracts indiviudal unique subdomains to a text file.
