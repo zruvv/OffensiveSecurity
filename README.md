@@ -17,4 +17,4 @@ Nmap commands that take input text file of IP addresses and performs: Nmap Host 
  Utilizes linux formatting commands to produce summarized files showing top hosts + count of open TCP port, top hosts + count of open TCP port, hosts & their corresponding open TCP ports. All sorted by highest count descending. Provides option to move raw files to new subdirectory.
 
 ## nmap-int-scanalyze
-Combines nmap-int-scan.sh internal nmap scan with the nmap-scanalyze.sh to scan an internal netowrk (host discovery, TCP, UDP) and summarize output.
+Combines nmap-int-scan.sh with nmap-scanalyze.sh to scan an internal netowrk (host discovery, TCP, UDP) and summarize output.
