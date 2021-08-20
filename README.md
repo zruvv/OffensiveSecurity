@@ -4,7 +4,9 @@ A combination of Offensive Security tools for Read Teamers & Penetration Testers
 Table of Contents  
 =================
  * [domain-recon](#domain-recon) 
- * [nmap-recon](#nmap-recon) 
+ * [nmap-int-scan](#nmap-int-scan) 
+ * [nmap-scanalyze](#nmap-scanalyze) 
+ * [nmap-int-scanalyze](#nmap-int-scanalyze) 
 
 ## domain-recon
 Tool used to perform reconnaissance from a domain name. Outputs are sent to their respective .txt files in your current working directory.
