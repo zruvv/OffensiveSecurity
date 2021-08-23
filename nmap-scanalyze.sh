@@ -27,7 +27,11 @@ cat $tcp_file | awk '/22\/open/ {print $2}' > hosts_22.txt
 cat $tcp_file | awk '/445\/open/ {print $2}' > hosts_445.txt
 cat $tcp_file | awk '/21\/open/ {print $2}' > hosts_21.txt
 cat $tcp_file | awk '/23\/open/ {print $2}' > hosts_23.txt
+cat $tcp_file | awk '/25\/open/ {print $2}' > hosts_25.txt
+cat $tcp_file | awk '/69\/open/ {print $2}' > hosts_69.txt
+cat $tcp_file | awk '/1433\/open/ {print $2}' > hosts_1433.txt
 cat $tcp_file | awk '/3389\/open/ {print $2}' > hosts_3389.txt
+cat $tcp_file | awk '/3306\/open/ {print $2}' > hosts_3306.txt
 find $path -type f -size 0 -delete
 
 echo -e "\n\e[1;33mFull results can be found under $path\e[0m"
