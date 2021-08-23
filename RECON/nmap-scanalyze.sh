@@ -5,7 +5,7 @@
 ##################################
 
 echo "Enter file path to folder storing nmap output files (exclude the trailing /): "
-echo "Ex: /home/iv4user/Desktop/pentest/client/internal/scope"
+echo "Ex: /home/user/Desktop/pentest/client/internal/scope"
 read path
 echo "Anlayzing Nmap output"
 
