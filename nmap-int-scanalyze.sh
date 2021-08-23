@@ -36,11 +36,11 @@ echo "Anlayzing Nmap output"
 tcp_file=$path/tcpscan.gnmap
 udp_file=$path/udpscan.gnmap
 echo -e "\e[1;32mOpen TCP ports\e[0m"
-egrep -v "^#|Status: Up" $tcp_file | cut -d' ' -f2,4- | sed -n -e 's/Ignored.*//p' | awk -F, '{split($0,a," "); printf "Host: %-20s TCP Ports Open: %d\n" , a[1], NF}' | sort -k 6 -r | uniq > $path/hosts_top_tcp_open.txt
+egrep -v "^#|Status: Up" $tcp_file | cut -d' ' -f2,4- | sed -n -e 's/Ignored.*//p' | awk -F, '{split($0,a," "); printf "Host: %-20s TCP Ports Open: %d\n" , a[1], NF}' | sort -k 6 -r | uniq > $path/hosts_tcp_open_top.txt
 egrep -v "^#|Status: Up" $tcp_file | cut -d' ' -f2,4- | sed -n -e 's/Ignored.*//p' | awk -F, '{split($0,a," "); printf "Host: %-20s TCP Ports Open: %d\n" , a[1], NF}' | sort -k 6 -r | uniq
 
 echo -e "\n\e[1;32mOpen UDP ports\e[0m"
-egrep -v "^#|Status: Up" $udp_file | cut -d' ' -f2,4- | sed -n -e 's/Ignored.*//p' | awk -F, '{split($0,a," "); printf "Host: %-20s UDP Ports Open: %d\n" , a[1], NF}' | sort -k 6 -r | uniq > $path/hosts_top_udp_open.txt
+egrep -v "^#|Status: Up" $udp_file | cut -d' ' -f2,4- | sed -n -e 's/Ignored.*//p' | awk -F, '{split($0,a," "); printf "Host: %-20s UDP Ports Open: %d\n" , a[1], NF}' | sort -k 6 -r | uniq > $path/hosts_udp_open_top.txt
 egrep -v "^#|Status: Up" $udp_file | cut -d' ' -f2,4- | sed -n -e 's/Ignored.*//p' | awk -F, '{split($0,a," "); printf "Host: %-20s UDP Ports Open: %d\n" , a[1], NF}' | sort -k 6 -r | uniq
 
 echo -e "\n\e[1;32mAll Active host + TCP ports/service\e[0m"
