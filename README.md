@@ -9,6 +9,7 @@ Table of Contents
  * [nmap-int-scanalyze](#nmap-int-scanalyze) 
  * [nmap-scanalyze](#nmap-scanalyze) 
  * [subdomain-recon](#subdomain-recon) 
+ * [xtract_win.ps1](#xtract-win) 
 
 ## domain-recon
 tree/main/RECON
@@ -40,3 +41,8 @@ Combines nmap-int-scan.sh with nmap-scanalyze.sh to scan an internal netowrk (ho
 tree/main/RECON
 
 Utilizes sublist3r & amass to discover subdomains of a provided domain. Extracts indiviudal unique subdomains to a text file.
+
+## xtract_win
+tree/main/POST-EXPLOIT
+
+Utilizes PowerShell to extract passwords from common Windows objects and files without needing to download additional password dump tools.
