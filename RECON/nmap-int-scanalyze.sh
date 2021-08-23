@@ -6,7 +6,7 @@
 
 echo -e "Run as sudo...\n *This script is suitable for small - mid size internal scopes* \n"
 echo "Enter file path to internalscope.txt file (exclude the trailing /): "
-echo "Ex: /home/iv4user/Desktop/pentest/client/internal/scope"
+echo "Ex: /home/user/Desktop/pentest/client/internal/scope"
 read path
 
 echo -e "\nEnter in name of internal scope file: "
