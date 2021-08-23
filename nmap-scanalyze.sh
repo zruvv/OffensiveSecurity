@@ -23,6 +23,7 @@ egrep -v "^#|Status: Up" $tcp_file | cut -d' ' -f2,4- | sed -n -e 's/Ignored.*//
 mkdir $path/hosts_ports
 cat $tcp_file | awk '/80\/open/ {print $2}' > hosts_80.txt
 cat $tcp_file | awk '/443\/open/ {print $2}' > hosts_443.txt
+cat $tcp_file | awk '/8080\/open/ {print $2}' > hosts_8080.txt
 cat $tcp_file | awk '/22\/open/ {print $2}' > hosts_22.txt
 cat $tcp_file | awk '/445\/open/ {print $2}' > hosts_445.txt
 cat $tcp_file | awk '/21\/open/ {print $2}' > hosts_21.txt
