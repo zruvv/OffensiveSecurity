@@ -4,6 +4,9 @@
 #ANALYZING OUTPUT OF SCAN RESULTS#
 ##################################
 
+echo "Enter file path to folder storing nmap output files (exclude the trailing /): "
+echo "Ex: /home/iv4user/Desktop/pentest/client/internal/scope"
+read path
 echo "Anlayzing Nmap output"
 
 tcp_file=$path/tcpscan.gnmap
