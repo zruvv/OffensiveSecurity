@@ -9,7 +9,7 @@ Table of Contents
  * [nmap-int-scanalyze](#nmap-int-scanalyze) 
  * [nmap-scanalyze](#nmap-scanalyze) 
  * [subdomain-recon](#subdomain-recon) 
- * [xtract_win](#xtract-win) 
+ * [xtract_win](#xtract_win) 
 
 ## domain-recon
 tree/main/RECON
