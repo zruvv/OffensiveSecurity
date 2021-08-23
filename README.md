@@ -1,5 +1,5 @@
 # Penny Testing Tools
-A combination of Offensive Security tools for Red Teamers & Penetration Testers.
+A combination of Offensive Security tools and scripts for Red Teamers & Penetration Testers.
 
 Table of Contents  
 =================
