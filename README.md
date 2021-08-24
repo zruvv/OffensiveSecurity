@@ -4,6 +4,7 @@ A combination of Offensive Security tools and scripts for Red Teamers & Penetrat
 Table of Contents  
 =================
  * [domain-recon](#domain-recon) 
+ * [dns-transfer](#dns-transfer)
  * [int-scan-445](#int-scan-445) 
  * [int-scan](#int-scan) 
  * [int-scanalyze](#int-scanalyze) 
@@ -11,11 +12,17 @@ Table of Contents
  * [subdomain-recon](#subdomain-recon) 
  * [xtract_win](#xtract_win) 
 
+
 ## domain-recon
 tree/main/RECON
 
 Tool used to perform reconnaissance from a domain name. Outputs are sent to their respective .txt files in your current working directory.
 DNS record lookups, Whois records, Publicly available email addresses, Domain typos
+
+## dns-transfer
+tree/main/EXPLOIT
+
+Attempts a DNS Zone Transfer against target domain.
 
 ## int-scan-445
 tree/main/RECON
