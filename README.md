@@ -4,7 +4,7 @@ A combination of Offensive Security tools and scripts for Red Teamers & Penetrat
 Table of Contents  
 =================
  * [domain-recon](#domain-recon) 
- * [dns-transfer](#dns-transfer.sh)
+ * [dns-transfer](#dns-transfer)
  * [int-scan-445](#int-scan-445) 
  * [int-scan](#int-scan) 
  * [int-scanalyze](#int-scanalyze) 
