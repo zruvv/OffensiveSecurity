@@ -11,6 +11,7 @@ Table of Contents
  * [scanalyze](#scanalyze) 
  * [subdomain-recon](#subdomain-recon) 
  * [xtract_win](#xtract_win) 
+ * [xtract-Teams-chat-history](#xtract-Teams-chat-history)
 
 
 ## domain-recon
@@ -48,6 +49,9 @@ Combines nmap-int-scan.sh, nmap-int-scan-445, and nmap-scanalyze.sh to scan an i
 tree/main/RECON
 
 Utilizes sublist3r & amass to discover subdomains of a provided domain. Extracts indiviudal unique subdomains to a text file.
+
+## xtract-Teams-chat-history
+Extract Teams chat history under the current user context.
 
 ## xtract_win
 tree/main/POST-EXPLOIT
