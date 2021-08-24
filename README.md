@@ -4,10 +4,10 @@ A combination of Offensive Security tools and scripts for Red Teamers & Penetrat
 Table of Contents  
 =================
  * [domain-recon](#domain-recon) 
- * [nmap-int-scan-445](#nmap-int-scan-445) 
- * [nmap-int-scan](#nmap-int-scan) 
- * [nmap-int-scanalyze](#nmap-int-scanalyze) 
- * [nmap-scanalyze](#nmap-scanalyze) 
+ * [int-scan-445](#int-scan-445) 
+ * [int-scan](#int-scan) 
+ * [int-scanalyze](#int-scanalyze) 
+ * [scanalyze](#scanalyze) 
  * [subdomain-recon](#subdomain-recon) 
  * [xtract_win](#xtract_win) 
 
@@ -17,25 +17,25 @@ tree/main/RECON
 Tool used to perform reconnaissance from a domain name. Outputs are sent to their respective .txt files in your current working directory.
 DNS record lookups, Whois records, Publicly available email addresses, Domain typos
 
-## nmap-int-scan-445
+## int-scan-445
 tree/main/RECON
 
 Nmap commands that runs service discovery scan on hosts with port 445 open, NSE scripts (vulnerability checks, OS-discovery, enumsmb-shares), checks for null session access, SMB shares & their permissions.
 
-## nmap-int-scan
+## int-scan
 tree/main/RECON
 
 Nmap commands that take input text file of IP addresses and performs: Nmap Host Discovery scan, TCP Port Scan, UDP Port Scan and sends outputs to the specified file location. 
 
-## nmap-scanalyze
+## scanalyze
 tree/main/RECON
 
 Utilizes linux formatting commands to produce summarized files showing top hosts + count of open TCP port, top hosts + count of open TCP port, hosts & their corresponding open TCP ports. All sorted by highest count descending. Provides option to move raw files to new subdirectory.
 
-## nmap-int-scanalyze
+## int-scanalyze
 tree/main/RECON
 
-Combines nmap-int-scan.sh with nmap-scanalyze.sh to scan an internal netowrk (host discovery, TCP, UDP) and summarize output.
+Combines nmap-int-scan.sh, nmap-int-scan-445, and nmap-scanalyze.sh to scan an internal netowrk (host discovery, TCP, UDP), SMB enumeration (null sessions, OS, shares, vulnerabilities) and summarizes output.
 
 ## subdomain-recon
 tree/main/RECON
