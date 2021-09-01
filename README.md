@@ -14,8 +14,8 @@ Table of Contents
  * [xtract-teams-chat-history](#xtract-teams-chat-history)
  * [xtract_win](#xtract_win) 
 
-
-## domain-recon
+##RECON
+### domain-recon
 tree/main/RECON
 
 Tool used to perform reconnaissance from a domain name. Outputs are sent to their respective .txt files in your current working directory.
