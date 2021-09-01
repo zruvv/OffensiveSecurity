@@ -7,7 +7,8 @@ Table of Contents
  * [dns-transfer](#dns-transfer)
  * [int-scan-445](#int-scan-445) 
  * [int-scan](#int-scan) 
- * [int-scanalyze](#int-scanalyze) 
+ * [int-scanalyze](#int-scanalyze)
+ * [recon-the-director](#recon-the-director) 
  * [scanalyze](#scanalyze) 
  * [subdomain-recon](#subdomain-recon) 
  * [xtract-teams-chat-history](#xtract-teams-chat-history)
@@ -44,6 +45,11 @@ Utilizes linux formatting commands to produce summarized files showing top hosts
 tree/main/RECON
 
 Combines nmap-int-scan.sh, nmap-int-scan-445, and nmap-scanalyze.sh to scan an internal netowrk (host discovery, TCP, UDP), SMB enumeration (null sessions, OS, shares, vulnerabilities) and summarizes output.
+
+## recon-the-director
+tree/main/RECON
+
+Uses unauthenticated (null) access to query a domain controller through SMB, RPC, Kerberos, and LDAP. Identifies open SMB shares, domain data through RPC and LDAP, verifies if accounts exists through Kerberos responses
 
 ## subdomain-recon
 tree/main/RECON
