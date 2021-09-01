@@ -1,4 +1,5 @@
 #!/bin/bash
+echo -e "\n\e[1;38m RECON-THE-DIRECTOR\e[0m"
 read -p "Enter in the IP Address of the target Domain Controller: " dc_ip
 read -p  "Would you like to perform User Enumeration using Kerbrute? (y/n): " answer
 read -p "Enter one of the following options on username format: john.doe, j.doe, jdoe, johndoe, custom: " list
