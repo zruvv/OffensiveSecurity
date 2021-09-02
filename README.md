@@ -58,7 +58,7 @@ Attempts a DNS Zone Transfer against target domain.
 
 #### exploit-the-director
 
-Uses verified credentials to query a domain controller through SMB, RPC, Kerberos, and LDAP. Identifies open SMB shares, domain data through LDAP & SMB, dumps domain & local accounts and groups, get's user SPNs, attempt to dump SAM, LSA, NTDS.
+Uses verified credentials to query a domain controller through SMB, RPC, Kerberos, and LDAP. Identifies open SMB shares, domain data through LDAP & SMB, dumps domain & local accounts and groups, get's user SPNs, attempt to dump SAM, LSA, NTDS. Attempts to load mimikatz and dump hashes as well through cme.
 
 ## POST-EXPLOITATION
 #### xtract-teams-chat-history
