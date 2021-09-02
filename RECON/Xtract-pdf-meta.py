@@ -20,7 +20,8 @@ def get_info(dirName):
                 
     return allFiles
 
-pdfpath = '/home/iv4user/Downloads/pdf'
+#Modify this path to your file path of PDFs 
+pdfpath = '/home/user/Downloads/pdf'
 file_list = get_info(pdfpath)
 print(file_list)
 
