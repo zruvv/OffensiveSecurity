@@ -11,6 +11,7 @@ Table of Contents
  * [recon-the-director-null](#recon-the-director-null) 
  * [scanalyze](#scanalyze) 
  * [subdomain-recon](#subdomain-recon) 
+ * [xtract-pdf-meta](#xtract-pdf-meta) 
  * [xtract-teams-chat-history](#xtract-teams-chat-history)
  * [xtract_win](#xtract_win) 
 
@@ -44,6 +45,10 @@ Uses unauthenticated (null) access to query a domain controller through SMB, RPC
 #### subdomain-recon
 
 Utilizes sublist3r & amass to discover subdomains of a provided domain. Extracts indiviudal unique subdomains to a text file.
+
+#### xtract-pdf-meta
+
+Utilizes python's pdfminer module to dump the metadata of a directory full of PDFs.
 
 ## EXPLOIT
 #### dns-transfer
