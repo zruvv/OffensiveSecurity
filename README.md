@@ -8,7 +8,7 @@ Table of Contents
  * [int-scan-445](#int-scan-445) 
  * [int-scan](#int-scan) 
  * [int-scanalyze](#int-scanalyze)
- * [recon-the-director-auth](#recon-the-director-auth) 
+ * [exploit-the-director](#exploit-the-director) 
  * [recon-the-director-null](#recon-the-director-null) 
  * [scanalyze](#scanalyze) 
  * [subdomain-recon](#subdomain-recon) 
@@ -39,10 +39,6 @@ Utilizes linux formatting commands to produce summarized files showing top hosts
 
 Combines nmap-int-scan.sh, nmap-int-scan-445, and nmap-scanalyze.sh to scan an internal netowrk (host discovery, TCP, UDP), SMB enumeration (null sessions, OS, shares, vulnerabilities) and summarizes output.
 
-#### recon-the-director-auth
-
-Uses verified credentials to query a domain controller through SMB, RPC, Kerberos, and LDAP. Identifies open SMB shares, domain data through RPC and LDAP, verifies if accounts exists through Kerberos responses
-
 #### recon-the-director-null
 
 Uses unauthenticated (null) access to query a domain controller through SMB, RPC, Kerberos, and LDAP. Identifies open SMB shares, domain data through RPC and LDAP, verifies if accounts exists through Kerberos responses
@@ -59,6 +55,10 @@ Utilizes python's pdfminer module to dump the metadata of a directory full of PD
 #### dns-transfer
 
 Attempts a DNS Zone Transfer against target domain.
+
+#### exploit-the-director
+
+Uses verified credentials to query a domain controller through SMB, RPC, Kerberos, and LDAP. Identifies open SMB shares, domain data through LDAP & SMB, dumps domain & local accounts and groups, get's user SPNs.
 
 ## POST-EXPLOITATION
 #### xtract-teams-chat-history
