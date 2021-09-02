@@ -21,10 +21,6 @@ Table of Contents
 Tool used to perform reconnaissance from a domain name. Outputs are sent to their respective .txt files in your current working directory.
 DNS record lookups, Whois records, Publicly available email addresses, Domain typos
 
-#### dns-transfer
-
-Attempts a DNS Zone Transfer against target domain.
-
 #### int-scan-445
 
 Nmap commands that runs service discovery scan on hosts with port 445 open, NSE scripts (vulnerability checks, OS-discovery, enumsmb-shares), checks for null session access, SMB shares & their permissions.
@@ -48,6 +44,11 @@ Uses unauthenticated (null) access to query a domain controller through SMB, RPC
 #### subdomain-recon
 
 Utilizes sublist3r & amass to discover subdomains of a provided domain. Extracts indiviudal unique subdomains to a text file.
+
+## EXPLOIT
+#### dns-transfer
+
+Attempts a DNS Zone Transfer against target domain.
 
 ## POST-EXPLOITATION
 #### xtract-teams-chat-history
