@@ -24,17 +24,17 @@ rpcdump.py -p 135 $dc_ip > rpc_dump_results.txt
 #Checking for RPC Anonymouse Access
 echo -e "\n\e[1;32mChecking for Anonymous RPC Access using rpcclient, see rpcclient_results.txt"
 echo -e "\n\e[1;36mEnumerating Privleges\e[0m"
-rpcclient 10.10.10.248 -c enumprivs  -U '' -N > rpcclient_results.txt
+rpcclient $dc_ip -c enumprivs  -U '' -N > rpcclient_results.txt
 echo -e "\e[1;36mQuerying Display Info\e[0m" 
-rpcclient 10.10.10.248 -c querydispinfo  -U '' -N >> rpcclient_results.txt
+rpcclient $dc_ip -c querydispinfo  -U '' -N >> rpcclient_results.txt
 echo -e "\e[1;36mQuerying Domain Info\e[0m" 
-rpcclient 10.10.10.248 -c querydominfo  -U '' -N >> rpcclient_results.txt
+rpcclient $dc_ip -c querydominfo  -U '' -N >> rpcclient_results.txt
 echo -e "\e[1;36mEnumerating Domain Users\e[0m"
-rpcclient 10.10.10.248 -c enumdomusers -U '' -N >> rpcclient_results.txt
+rpcclient $dc_ip -c enumdomusers -U '' -N >> rpcclient_results.txt
 echo -e "\e[1;36mEnumerating Domain Groups\e[0m"
-rpcclient 10.10.10.248 -c enumdomgroups  -U '' -N >> rpcclient_results.txt
+rpcclient $dc_ip -c enumdomgroups  -U '' -N >> rpcclient_results.txt
 echo -e "\e[1;36mEnumerating Domain Password Info\e[0m"
-rpcclient 10.10.10.248 -c getdompwinfo -U '' -N >> rpcclient_results.txt
+rpcclient $dc_ip -c getdompwinfo -U '' -N >> rpcclient_results.txt
 
 #Collecting Domain Naming Contexts
 echo -e "\n\e[1;32mldapsearch to query DC namingcontexts\e[0m"
