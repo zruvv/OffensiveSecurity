@@ -19,7 +19,7 @@ Table of Contents
 
 ## RECON
 #### domain-recon
-*Requires dnsrecon, whois, theHarvester, urlcrazy*
+*Requires: dnsrecon, whois, theHarvester, urlcrazy*
 
 Tool used to perform reconnaissance from a domain name. Outputs are sent to their respective .txt files in your current working directory.
 DNS record lookups, Whois records, Publicly available email addresses, Domain typos
