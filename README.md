@@ -35,31 +35,24 @@ Utilizes linux formatting commands to produce summarized files showing top hosts
 Combines nmap-int-scan.sh, nmap-int-scan-445, and nmap-scanalyze.sh to scan an internal netowrk (host discovery, TCP, UDP), SMB enumeration (null sessions, OS, shares, vulnerabilities) and summarizes output.
 
 #### recon-the-director-null
-
 Uses unauthenticated (null) access to query a domain controller through SMB, RPC, Kerberos, and LDAP. Identifies open SMB shares, domain data through RPC and LDAP, verifies if accounts exists through Kerberos responses
 
 #### subdomain-recon
-
 Utilizes sublist3r & amass to discover subdomains of a provided domain. Extracts indiviudal unique subdomains to a text file.
 
 #### xtract-pdf-meta
-
 Utilizes python's pdfminer module to dump the metadata of a directory full of PDFs.
 
 ## EXPLOIT
 #### dns-transfer
-
 Attempts a DNS Zone Transfer against target domain.
 
 #### exploit-the-director
-
 Uses verified credentials to query a domain controller through SMB, RPC, Kerberos, and LDAP. Identifies open SMB shares, domain data through LDAP & SMB, dumps domain & local accounts and groups, get's user SPNs, attempt to dump SAM, LSA, NTDS. Attempts to load mimikatz and dump hashes as well through cme.
 
 ## POST-EXPLOITATION
 #### xtract-teams-chat-history
-
 Extract Microsoft Teams chat history under the context of the current user executing the script.
 
 #### xtract_win
-
 Utilizes PowerShell to extract passwords from common Windows objects and files without needing to download additional password dump tools.
