@@ -96,7 +96,7 @@ then
 	for ip in $smbhosts
 	do
 		echo -e "\n\e[1;32mSMB results for $ip\e[0m" 
-		rpcclient -U "" $ip
+		rpcclient -U "" $ip --no-pass
 		# smbclient -L \\\\$ip -N
 		smbmap -H $ip
 		# enum4linux $ip
