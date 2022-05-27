@@ -25,7 +25,7 @@ Tool used to perform reconnaissance from a domain name. Outputs are sent to thei
 DNS record lookups, Whois records, Publicly available email addresses, Domain typos
 
 #### int-scan-445
-*Requires: nmap, rppclient, smbmap*
+*Requires: nmap, rpclient, smbmap*
 
 Nmap commands that runs service discovery scan on hosts with port 445 open, NSE scripts (vulnerability checks, OS-discovery, enumsmb-shares), checks for null session access, SMB shares & their permissions.
 
