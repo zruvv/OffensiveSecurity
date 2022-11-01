@@ -38,7 +38,7 @@ rpcclient $dc_ip -c getdompwinfo -U '' -N >> rpcclient_results.txt
 
 #Collecting Domain Naming Contexts
 echo -e "\n\e[1;32mldapsearch to query DC namingcontexts\e[0m"
-ldapsearch -x -h $dc_ip -s base namingcontexts | grep "namingContexts:"
+ldapsearch -x -H ldap://$dc_ip -s base namingcontexts | grep "namingContexts:"
 
 #Identifying Usernames that exist in Kerberos Active Directory, finds kerbrute.py if it exists on the attck system.
 kerpath=$(locate kerbrute.py -l 1)
